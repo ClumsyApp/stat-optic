@@ -1,3 +1,5 @@
+/* Background color: 009d07*/
+
 /* Style the tab buttons */
 .tablink {
   background-color: #555;
@@ -20,7 +22,7 @@
 .tabcontent {
   color: white;
   display: none;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -29,3 +31,7 @@
 #Paris {background-color:green;}
 #Tokyo {background-color:blue;}
 #Oslo {background-color:orange;}
+
+body {
+  background-color: #000000;
+}

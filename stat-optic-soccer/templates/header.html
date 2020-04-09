@@ -2,36 +2,18 @@
 <head>
     <title>Header</title>
     <link rel="stylesheet" type="text/css" href="{% static 'header.css' %}">
+    
 </head>
 
+<button class="tablink" onclick="openTab('EnterStats', this)" id="defaultOpen">Enter Stats</button>
+<button class="tablink" onclick="openTab('StatTable', this)">Stat Table</button>
+<button class="tablink" onclick="openTab('ShareStats', this)">Share Stats</button>
+<button class="tablink" onclick="openTab('Options', this)">Options</button>
 
-<div id="London" class="tabcontent">
-  <h1>London</h1>
-  <p>London is the capital city of England.</p>
-</div>
 
-<div id="Paris" class="tabcontent">
-  <h1>Paris</h1>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h1>Tokyo</h1>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="Oslo" class="tabcontent">
-  <h1>Oslo</h1>
-  <p>Oslo is the capital of Norway.</p>
-</div>
-
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
 
 <script>
-function openCity(cityName, elmnt, color) {
+function openTab(tab, elmnt) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -46,12 +28,10 @@ function openCity(cityName, elmnt, color) {
   }
 
   // Show the specific tab content
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tab).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = color;
+  elmnt.style.backgroundColor = "#009d07";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click(); 
 </script>

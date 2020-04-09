@@ -17,8 +17,6 @@
 
 import datetime
 from django.utils import timezone
-#from source_optics.models import (Organization, Repository, Author, Statistic)
-#import source_optics.models as models
 
 CURRENT_TZ = timezone.get_current_timezone()
 
